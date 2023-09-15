@@ -1,7 +1,7 @@
 {
 	"name": "Elixir (Community)",
 	"build": {
-		"dockerfile": "Dockerfile",
+		"dockerfile": "dockerfile",
 		"args": {
 			// Elixir Version: 1.9, 1.10, 1.10.4, ...
 			"VARIANT": "latest"
