@@ -6,5 +6,10 @@ services:
       VARIANT: latest
     volumes:
       - ..:/home/vscode/workspace:cached
-
-  
+  postgres:
+    image: postgres:13.4-alpine
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "4001:5432"
+    

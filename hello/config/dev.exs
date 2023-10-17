@@ -4,11 +4,12 @@ import Config
 config :hello, Hello.Repo,
   username: "postgres",
   password: "postgres",
-  hostname: "host.docker.internal",
-  database: "hello_phx_dev",
+  hostname: "postgres",
+  database: "hello_phx1_dev",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
-  pool_size: 10
+  pool_size: 10,
+  port: "5432"
 
 # For development, we disable any cache and enable
 # debugging and code reloading.
