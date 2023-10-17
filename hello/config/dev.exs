@@ -4,8 +4,8 @@ import Config
 config :hello, Hello.Repo,
   username: "postgres",
   password: "postgres",
-  hostname: "localhost",
-  database: "hello_dev",
+  hostname: "host.docker.internal",
+  database: "hello_phx_dev",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
