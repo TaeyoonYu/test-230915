@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  elixir:
+    build: .
+    environment:
+      VARIANT: latest
+    volumes:
+      - ..:/home/vscode/workspace:cached
+
+  
