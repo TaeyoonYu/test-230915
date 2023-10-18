@@ -10,4 +10,6 @@ optimise = "optimise"
 colour = "colour"
 
 [files]
-extend-exclude = []
+extend-exclude = [ 
+    "hello/test/**"
+]
