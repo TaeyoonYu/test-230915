@@ -1,0 +1,13 @@
+[default]
+locale = "en-us"
+
+[default.extend-words]
+# Don't correct some words
+ret = "ret"
+prev = "prev"
+behaviour = "behaviour"
+optimise = "optimise"
+colour = "colour"
+
+[files]
+extend-exclude = []
