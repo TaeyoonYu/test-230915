@@ -1,0 +1,21 @@
+name: Check Typos
+
+on:
+  pull_request:
+    branches: ["**"]
+  workflow_dispatch:
+    inputs:
+
+jobs:
+  run:
+    name: Spell Check with Typos
+    runs-on: ubuntu-latest
+    if: ${{ github.actor != 'dependabot[bot]' }}
+    steps:
+      - name: Checkout Actions Repository
+        uses: actions/checkout@v3
+
+      - name: Check spelling
+        uses: crate-ci/typos@v1.4.1
+        with:
+          config: ${{github.workspace}}/.github/settings/typos.toml
