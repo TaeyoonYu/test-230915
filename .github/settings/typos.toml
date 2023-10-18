@@ -11,5 +11,6 @@ colour = "colour"
 
 [files]
 extend-exclude = [ 
-    "hello/test/**"
+    "hello/test/**",
+    "hello/priv/**"
 ]
